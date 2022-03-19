@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgb(9, 167, 9);
-    --secondary-color: rgb(233, 37, 31);
-    --font-color: 
+    --primary-color: olivedrab;
+    --secondary-color: firebrick;
+    --font-color: gold;
 }
 
 * {
@@ -13,6 +13,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--secondary-color);
+    background-color: var(--primary-color);
     
 }
 
@@ -20,6 +21,88 @@ header {
     padding: 30px 35px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    
+    background-color: var(--primary-color);
 }
+
+header h1 {
+    font-weight: bold;
+    font-size: 42px;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.69%);
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 15px 20px;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 40%)
+}
+
+header nav ul li a :hover {
+    background: var(--primary-color);
+    color: var(--font-color);
+    border-radius: 20px;
+    text-shadow: none;
+}
+
+section {
+    padding: 60px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 35px 40px;
+    text-align: center;
+}
+
+.hero {
+    background-image: url(../images/hero.jpeg);
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-size: cover;
+    align-items: right;
+    background-attachment: fixed;
+    background-position: 75%;
+    height: 469px;
+}
+
+.intro p {
+    color: var(--secondary-color);
+    width: 75%;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+address {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
